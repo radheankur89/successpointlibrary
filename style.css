@@ -1,0 +1,115 @@
+body {
+  background: rgba(219, 213, 145, 0.6588235294);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+a {
+  color: #d83d46;
+}
+
+header {
+  position: relative;
+}
+header .logo {
+  position: relative;
+}
+@media screen and (min-width: 1200px) {
+  header .logo {
+    max-height: 110px !important;
+  }
+}
+header .logo-bg {
+  display: none;
+  background: #fff;
+  width: 65px;
+  height: 75px;
+  position: absolute;
+  top: 25px;
+  left: 19px;
+  border-radius: 40px 40px 0 10px;
+}
+@media screen and (min-width: 970px) {
+  header .logo-bg {
+    display: block;
+  }
+}
+
+.nav {
+  width: 100%;
+}
+.nav .nav-item a {
+  color: #d83d46;
+}
+
+.content img {
+  width: 100%;
+}
+
+#services ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#services ul li {
+  display: flex;
+  width: 50%;
+  height: 90px;
+  align-items: center;
+}
+@media screen and (min-width: 900px) {
+  #services ul li {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #services ul li {
+    width: 25%;
+  }
+}
+#services ul li i {
+  font-size: 30px;
+  padding-right: 2rem;
+  color: #d83d46;
+}
+
+table {
+  width: 100%;
+}
+table tr,
+table td {
+  border-width: 1px;
+}
+table td {
+  padding: 5px;
+}
+
+#rules .rules__list {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+#rules ul,
+#rules li {
+  list-style-type: none;
+  margin-bottom: 0.2rem;
+}
+#rules ul i,
+#rules li i {
+  padding-right: 0.8rem;
+}
+#rules ul {
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background: #d83d46;
+  border-color: #d83d46;
+}
+
+/*# sourceMappingURL=style.css.map */

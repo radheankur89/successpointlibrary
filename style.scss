@@ -1,0 +1,129 @@
+$color-primary : #dbd591a8;
+$color-secondary : #d83d46;
+
+body {
+  background: $color-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+a {
+  color: $color-secondary; // rgb(203, 65, 84)
+}
+
+header {
+  position: relative;
+
+  .logo {
+    position: relative;
+
+    @media screen and (min-width: 1200px) {
+      max-height: 110px !important;
+    }
+  }
+
+  .logo-bg {
+    display: none;
+
+    @media screen and (min-width: 970px) {
+      display: block;
+    }
+
+    background: #fff;
+    width: 65px;
+    height: 75px;
+    position: absolute;
+    top: 25px;
+    left: 19px;
+    border-radius: 40px 40px 0 10px;
+  }
+}
+
+.nav {
+  width: 100%;
+
+  .nav-item a {
+    color: $color-secondary; // rgb(203, 65, 84)
+  }
+}
+
+.content {
+  img {
+    width: 100%;
+  }
+}
+
+#services {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      display: flex;
+      width: 50%;
+      height: 90px;
+      align-items: center;
+
+      @media screen and (min-width: 900px) {
+        width: 33%;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 25%;
+      }
+
+      i {
+        font-size: 30px;
+        padding-right: 2rem;
+        color: $color-secondary;
+      }
+    }
+  }
+
+}
+
+table {
+  width: 100%;
+
+  tr,
+  td {
+    border-width: 1px;
+  }
+
+  td {
+    padding: 5px;
+  }
+}
+
+#rules {
+  .rules__list {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+  }
+
+  ul,
+  li {
+    list-style-type: none;
+    margin-bottom: .2rem;
+
+    i {
+      padding-right: .8rem;
+    }
+  }
+
+  ul {
+    margin-bottom: 1rem;
+  }
+}
+
+.btn-primary {
+  background: $color-secondary;
+  border-color: $color-secondary;
+}
