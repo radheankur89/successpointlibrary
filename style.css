@@ -53,6 +53,25 @@ header .logo-bg {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .banner {
+    position: relative;
+  }
+  .banner-image {
+    padding: 0;
+  }
+  .banner-txt {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4705882353);
+  }
+  .banner-txt .text-center {
+    width: 100%;
+  }
+}
+
 #services ul {
   display: flex;
   flex-wrap: wrap;
